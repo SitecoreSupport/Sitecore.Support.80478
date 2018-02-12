@@ -1,4 +1,5 @@
-﻿(function ($scw, scBeacon) {
+﻿// Sitecore.Support.80478
+(function ($scw, scBeacon) {
     if (typeof window.WffmFieldsData === 'undefined') {
         window.WffmFieldsData = {};
     }
@@ -139,7 +140,6 @@
 
         },
 
-        // Sitecore.Support.97716.116019
         formSubmitError: function (form, xhr, status, exception) {
             $scw(form).html(xhr.responseText);
         },
